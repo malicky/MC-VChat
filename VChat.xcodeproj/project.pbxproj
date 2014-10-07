@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13C0B90E19E3DCBF00530A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B90D19E3DCBF00530A63 /* main.m */; };
+		13C0B91119E3DCC000530A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B91019E3DCBF00530A63 /* AppDelegate.m */; };
+		13C0B91419E3DCC000530A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B91319E3DCC000530A63 /* ViewController.m */; };
+		13C0B91719E3DCC000530A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91519E3DCC000530A63 /* Main.storyboard */; };
+		13C0B91919E3DCC000530A63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91819E3DCC000530A63 /* Images.xcassets */; };
+		13C0B91C19E3DCC000530A63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */; };
+		13C0B92819E3DCC000530A63 /* VChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B92719E3DCC000530A63 /* VChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13C0B92219E3DCC000530A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C0B90019E3DCBF00530A63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C0B90719E3DCBF00530A63;
+			remoteInfo = VChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13C0B90819E3DCBF00530A63 /* VChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0B90C19E3DCBF00530A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0B90D19E3DCBF00530A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13C0B90F19E3DCBF00530A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13C0B91019E3DCBF00530A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13C0B91219E3DCC000530A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13C0B91319E3DCC000530A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13C0B91619E3DCC000530A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13C0B91819E3DCC000530A63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		13C0B91B19E3DCC000530A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13C0B92119E3DCC000530A63 /* VChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C0B92619E3DCC000530A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C0B92719E3DCC000530A63 /* VChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13C0B90519E3DCBF00530A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0B91E19E3DCC000530A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C0B8FF19E3DCBF00530A63 = {
+			isa = PBXGroup;
+			children = (
+				13C0B90A19E3DCBF00530A63 /* VChat */,
+				13C0B92419E3DCC000530A63 /* VChatTests */,
+				13C0B90919E3DCBF00530A63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13C0B90919E3DCBF00530A63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B90819E3DCBF00530A63 /* VChat.app */,
+				13C0B92119E3DCC000530A63 /* VChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13C0B90A19E3DCBF00530A63 /* VChat */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B90F19E3DCBF00530A63 /* AppDelegate.h */,
+				13C0B91019E3DCBF00530A63 /* AppDelegate.m */,
+				13C0B91219E3DCC000530A63 /* ViewController.h */,
+				13C0B91319E3DCC000530A63 /* ViewController.m */,
+				13C0B91519E3DCC000530A63 /* Main.storyboard */,
+				13C0B91819E3DCC000530A63 /* Images.xcassets */,
+				13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */,
+				13C0B90B19E3DCBF00530A63 /* Supporting Files */,
+			);
+			path = VChat;
+			sourceTree = "<group>";
+		};
+		13C0B90B19E3DCBF00530A63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B90C19E3DCBF00530A63 /* Info.plist */,
+				13C0B90D19E3DCBF00530A63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13C0B92419E3DCC000530A63 /* VChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B92719E3DCC000530A63 /* VChatTests.m */,
+				13C0B92519E3DCC000530A63 /* Supporting Files */,
+			);
+			path = VChatTests;
+			sourceTree = "<group>";
+		};
+		13C0B92519E3DCC000530A63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13C0B92619E3DCC000530A63 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13C0B90719E3DCBF00530A63 /* VChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0B92B19E3DCC000530A63 /* Build configuration list for PBXNativeTarget "VChat" */;
+			buildPhases = (
+				13C0B90419E3DCBF00530A63 /* Sources */,
+				13C0B90519E3DCBF00530A63 /* Frameworks */,
+				13C0B90619E3DCBF00530A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VChat;
+			productName = VChat;
+			productReference = 13C0B90819E3DCBF00530A63 /* VChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13C0B92019E3DCC000530A63 /* VChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C0B92E19E3DCC000530A63 /* Build configuration list for PBXNativeTarget "VChatTests" */;
+			buildPhases = (
+				13C0B91D19E3DCC000530A63 /* Sources */,
+				13C0B91E19E3DCC000530A63 /* Frameworks */,
+				13C0B91F19E3DCC000530A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C0B92319E3DCC000530A63 /* PBXTargetDependency */,
+			);
+			name = VChatTests;
+			productName = VChatTests;
+			productReference = 13C0B92119E3DCC000530A63 /* VChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13C0B90019E3DCBF00530A63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Malick Youla";
+				TargetAttributes = {
+					13C0B90719E3DCBF00530A63 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					13C0B92019E3DCC000530A63 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 13C0B90719E3DCBF00530A63;
+					};
+				};
+			};
+			buildConfigurationList = 13C0B90319E3DCBF00530A63 /* Build configuration list for PBXProject "VChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13C0B8FF19E3DCBF00530A63;
+			productRefGroup = 13C0B90919E3DCBF00530A63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13C0B90719E3DCBF00530A63 /* VChat */,
+				13C0B92019E3DCC000530A63 /* VChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13C0B90619E3DCBF00530A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0B91719E3DCC000530A63 /* Main.storyboard in Resources */,
+				13C0B91C19E3DCC000530A63 /* LaunchScreen.xib in Resources */,
+				13C0B91919E3DCC000530A63 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0B91F19E3DCC000530A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13C0B90419E3DCBF00530A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0B91419E3DCC000530A63 /* ViewController.m in Sources */,
+				13C0B91119E3DCC000530A63 /* AppDelegate.m in Sources */,
+				13C0B90E19E3DCBF00530A63 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C0B91D19E3DCC000530A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C0B92819E3DCC000530A63 /* VChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13C0B92319E3DCC000530A63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C0B90719E3DCBF00530A63 /* VChat */;
+			targetProxy = 13C0B92219E3DCC000530A63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13C0B91519E3DCC000530A63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13C0B91619E3DCC000530A63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13C0B91B19E3DCC000530A63 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13C0B92919E3DCC000530A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13C0B92A19E3DCC000530A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13C0B92C19E3DCC000530A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13C0B92D19E3DCC000530A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		13C0B92F19E3DCC000530A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VChat.app/VChat";
+			};
+			name = Debug;
+		};
+		13C0B93019E3DCC000530A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VChat.app/VChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13C0B90319E3DCBF00530A63 /* Build configuration list for PBXProject "VChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0B92919E3DCC000530A63 /* Debug */,
+				13C0B92A19E3DCC000530A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C0B92B19E3DCC000530A63 /* Build configuration list for PBXNativeTarget "VChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0B92C19E3DCC000530A63 /* Debug */,
+				13C0B92D19E3DCC000530A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13C0B92E19E3DCC000530A63 /* Build configuration list for PBXNativeTarget "VChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0B92F19E3DCC000530A63 /* Debug */,
+				13C0B93019E3DCC000530A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13C0B90019E3DCBF00530A63 /* Project object */;
+}
