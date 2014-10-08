@@ -10,10 +10,16 @@
 		13C0B90E19E3DCBF00530A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B90D19E3DCBF00530A63 /* main.m */; };
 		13C0B91119E3DCC000530A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B91019E3DCBF00530A63 /* AppDelegate.m */; };
 		13C0B91419E3DCC000530A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B91319E3DCC000530A63 /* ViewController.m */; };
-		13C0B91719E3DCC000530A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91519E3DCC000530A63 /* Main.storyboard */; };
 		13C0B91919E3DCC000530A63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91819E3DCC000530A63 /* Images.xcassets */; };
 		13C0B91C19E3DCC000530A63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */; };
 		13C0B92819E3DCC000530A63 /* VChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B92719E3DCC000530A63 /* VChatTests.m */; };
+		13C0B93319E3DE1F00530A63 /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B93219E3DE1F00530A63 /* AVCamPreviewView.m */; };
+		13C0B93619E3DEF100530A63 /* VCCaptureVideoDataOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B93519E3DEF100530A63 /* VCCaptureVideoDataOutput.m */; };
+		13C0B93919E3DFA700530A63 /* VCSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B93819E3DFA700530A63 /* VCSessionController.m */; };
+		13C0B93C19E3E05300530A63 /* VCVideoPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C0B93B19E3E05300530A63 /* VCVideoPeer.m */; };
+		13C0B93E19E4374F00530A63 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C0B93D19E4374F00530A63 /* Main_iPhone.storyboard */; };
+		13C0B94419E4394000530A63 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0B94319E4394000530A63 /* MultipeerConnectivity.framework */; };
+		13C0B94619E4394800530A63 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C0B94519E4394800530A63 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +40,22 @@
 		13C0B91019E3DCBF00530A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		13C0B91219E3DCC000530A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		13C0B91319E3DCC000530A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		13C0B91619E3DCC000530A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13C0B91819E3DCC000530A63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13C0B91B19E3DCC000530A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13C0B92119E3DCC000530A63 /* VChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C0B92619E3DCC000530A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C0B92719E3DCC000530A63 /* VChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VChatTests.m; sourceTree = "<group>"; };
+		13C0B93119E3DE1F00530A63 /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		13C0B93219E3DE1F00530A63 /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
+		13C0B93419E3DEF100530A63 /* VCCaptureVideoDataOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCaptureVideoDataOutput.h; sourceTree = "<group>"; };
+		13C0B93519E3DEF100530A63 /* VCCaptureVideoDataOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCaptureVideoDataOutput.m; sourceTree = "<group>"; };
+		13C0B93719E3DFA700530A63 /* VCSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSessionController.h; sourceTree = "<group>"; };
+		13C0B93819E3DFA700530A63 /* VCSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSessionController.m; sourceTree = "<group>"; };
+		13C0B93A19E3E05300530A63 /* VCVideoPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCVideoPeer.h; sourceTree = "<group>"; };
+		13C0B93B19E3E05300530A63 /* VCVideoPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCVideoPeer.m; sourceTree = "<group>"; };
+		13C0B93D19E4374F00530A63 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		13C0B94319E4394000530A63 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		13C0B94519E4394800530A63 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0B94619E4394800530A63 /* GameKit.framework in Frameworks */,
+				13C0B94419E4394000530A63 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,8 @@
 		13C0B8FF19E3DCBF00530A63 = {
 			isa = PBXGroup;
 			children = (
+				13C0B94519E4394800530A63 /* GameKit.framework */,
+				13C0B94319E4394000530A63 /* MultipeerConnectivity.framework */,
 				13C0B90A19E3DCBF00530A63 /* VChat */,
 				13C0B92419E3DCC000530A63 /* VChatTests */,
 				13C0B90919E3DCBF00530A63 /* Products */,
@@ -85,7 +105,15 @@
 				13C0B91019E3DCBF00530A63 /* AppDelegate.m */,
 				13C0B91219E3DCC000530A63 /* ViewController.h */,
 				13C0B91319E3DCC000530A63 /* ViewController.m */,
-				13C0B91519E3DCC000530A63 /* Main.storyboard */,
+				13C0B93119E3DE1F00530A63 /* AVCamPreviewView.h */,
+				13C0B93219E3DE1F00530A63 /* AVCamPreviewView.m */,
+				13C0B93419E3DEF100530A63 /* VCCaptureVideoDataOutput.h */,
+				13C0B93519E3DEF100530A63 /* VCCaptureVideoDataOutput.m */,
+				13C0B93719E3DFA700530A63 /* VCSessionController.h */,
+				13C0B93819E3DFA700530A63 /* VCSessionController.m */,
+				13C0B93A19E3E05300530A63 /* VCVideoPeer.h */,
+				13C0B93B19E3E05300530A63 /* VCVideoPeer.m */,
+				13C0B93D19E4374F00530A63 /* Main_iPhone.storyboard */,
 				13C0B91819E3DCC000530A63 /* Images.xcassets */,
 				13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */,
 				13C0B90B19E3DCBF00530A63 /* Supporting Files */,
@@ -199,9 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C0B91719E3DCC000530A63 /* Main.storyboard in Resources */,
 				13C0B91C19E3DCC000530A63 /* LaunchScreen.xib in Resources */,
 				13C0B91919E3DCC000530A63 /* Images.xcassets in Resources */,
+				13C0B93E19E4374F00530A63 /* Main_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13C0B93619E3DEF100530A63 /* VCCaptureVideoDataOutput.m in Sources */,
+				13C0B93919E3DFA700530A63 /* VCSessionController.m in Sources */,
 				13C0B91419E3DCC000530A63 /* ViewController.m in Sources */,
 				13C0B91119E3DCC000530A63 /* AppDelegate.m in Sources */,
+				13C0B93C19E3E05300530A63 /* VCVideoPeer.m in Sources */,
+				13C0B93319E3DE1F00530A63 /* AVCamPreviewView.m in Sources */,
 				13C0B90E19E3DCBF00530A63 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +276,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13C0B91519E3DCC000530A63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13C0B91619E3DCC000530A63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		13C0B91A19E3DCC000530A63 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
-
+- (void)setupPreviewView:(BOOL)noConnectedPeers;
+- (void)sendDataToConnectedPeers:(NSData*)data;
 @end
 
