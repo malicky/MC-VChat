@@ -57,47 +57,10 @@
         
         NSNumber* timestamp = @(CMTimeGetSeconds(CMSampleBufferGetPresentationTimeStamp(sampleBuffer)));
         CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-#if 0
-        CGRect cropRect = AVMakeRectWithAspectRatioInsideRect(CGSizeMake(__WIDTH, __HEIGHT), CGRectMake(0,0, CVPixelBufferGetWidth(imageBuffer),CVPixelBufferGetHeight(imageBuffer)) );
+#if 1
         CIImage *ciImage = [[CIImage alloc] initWithCVPixelBuffer:imageBuffer];
-        CIImage* croppedImage = [ciImage imageByCroppingToRect:cropRect];
-        
-        UIImage* cgBackedImage = [self cgImageBackedImageWithCIImage:croppedImage];
+        UIImage* cgBackedImage = [self cgImageBackedImageWithCIImage:ciImage];
         NSData *imageData = UIImageJPEGRepresentation(cgBackedImage, 0.2);//max compression = 0, min compression:1.0
-        // maybe not always the correct input?  just using this to send current FPS...
-        AVCaptureInputPort* inputPort = connection.inputPorts[0];
-        AVCaptureDeviceInput* deviceInput = (AVCaptureDeviceInput*) inputPort.input;
-        CMTime frameDuration = deviceInput.device.activeVideoMaxFrameDuration;
-        NSDictionary* dict = @{
-                               @"image": imageData,
-                               @"timestamp" : timestamp,
-                               @"framesPerSecond": @(frameDuration.timescale)
-                               };
-        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict];
-        [_viewController sendDataToAll:data];
-        
-#else
-        
-        /*Get information about the image*/
-        // Lock the base address of the pixel buffer
-        CVPixelBufferLockBaseAddress(imageBuffer, 0);
-        void *baseAddress = CVPixelBufferGetBaseAddress(imageBuffer);
-        size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
-        size_t width = CVPixelBufferGetWidth(imageBuffer);
-        size_t height = CVPixelBufferGetHeight(imageBuffer);
-        /*Create a CGImageRef from the CVImageBufferRef*/
-        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-        CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
-        CGImageRef newImage = CGBitmapContextCreateImage(newContext);
-        // Lock the base address of the pixel buffer
-        CVPixelBufferLockBaseAddress(imageBuffer, 0);
-        
-        /*We release some components*/
-        CGContextRelease(newContext);
-        CGColorSpaceRelease(colorSpace);
-        
-        UIImage *image= [UIImage imageWithCGImage:newImage scale:[UIScreen mainScreen].scale orientation:UIImageOrientationRight];
-        NSData *imageData = UIImageJPEGRepresentation(image, 0.2);//max compression = 0, min compression:1.0
         // maybe not always the correct input?  just using this to send current FPS...
         AVCaptureInputPort* inputPort = connection.inputPorts[0];
         AVCaptureDeviceInput* deviceInput = (AVCaptureDeviceInput*) inputPort.input;
@@ -110,8 +73,48 @@
         NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict];
         [_viewController sendDataToConnectedPeers:data];
         
-        /*We relase the CGImageRef*/
-        CGImageRelease(newImage);
+#else
+        
+      
+            /*Get information about the image*/
+            // Lock the base address of the pixel buffer
+            CVPixelBufferLockBaseAddress(imageBuffer, 0);
+            void *baseAddress = CVPixelBufferGetBaseAddress(imageBuffer);
+            size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
+            size_t width = CVPixelBufferGetWidth(imageBuffer);
+            size_t height = CVPixelBufferGetHeight(imageBuffer);
+            /*Create a CGImageRef from the CVImageBufferRef*/
+            CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+            CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
+            CGImageRef newImage = CGBitmapContextCreateImage(newContext);
+            // Lock the base address of the pixel buffer
+            CVPixelBufferLockBaseAddress(imageBuffer, 0);
+            
+            /*We release some components*/
+            CGContextRelease(newContext);
+            CGColorSpaceRelease(colorSpace);
+        
+//        dispatch_queue_t consumer = dispatch_queue_create("consumer", NULL);
+//        dispatch_async(consumer,
+//                       ^{
+            UIImage *image= [UIImage imageWithCGImage:newImage scale:[UIScreen mainScreen].scale orientation:UIImageOrientationRight];
+            NSData *imageData = UIImageJPEGRepresentation(image, 0.2);//max compression = 0, min compression:1.0
+            // maybe not always the correct input?  just using this to send current FPS...
+            AVCaptureInputPort* inputPort = connection.inputPorts[0];
+            AVCaptureDeviceInput* deviceInput = (AVCaptureDeviceInput*) inputPort.input;
+            CMTime frameDuration = deviceInput.device.activeVideoMaxFrameDuration;
+            NSDictionary* dict = @{
+                                   @"image": imageData,
+                                   @"timestamp" : timestamp,
+                                   @"framesPerSecond": @(frameDuration.timescale)
+                                   };
+            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dict];
+            [_viewController sendDataToConnectedPeers:data];
+            
+            /*We relase the CGImageRef*/
+            CGImageRelease(newImage);
+//        });
+        
 #endif
         
     }

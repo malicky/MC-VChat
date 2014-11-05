@@ -17,7 +17,7 @@
 #import "VCSessionController.h"
 #import "VCVideoPeer.h"
 
-const uint __FRAMERATE = 5;
+const uint __FRAMERATE = 3;
 
 @interface ViewController ()<VCVideoPeerDelegate,AVCaptureVideoDataOutputSampleBufferDelegate, VCSessionControllerDelegate>
 {
@@ -160,6 +160,42 @@ const uint __FRAMERATE = 5;
     });
 }
 
+
+-(void)viewDidLayoutSubviews {
+    NSLog(@"%@", (self.view.frame.size.width == ([[UIScreen mainScreen] bounds].size.width*([[UIScreen mainScreen] bounds].size.width<[[UIScreen mainScreen] bounds].size.height))+([[UIScreen mainScreen] bounds].size.height*([[UIScreen mainScreen] bounds].size.width>[[UIScreen mainScreen] bounds].size.height))) ? @"Portrait" : @"Landscape");
+    
+    switch ([[UIApplication sharedApplication] statusBarOrientation]) {
+        case UIDeviceOrientationPortrait:
+            NSLog(@"%@", @"UIDeviceOrientationPortrait");
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            NSLog(@"%@", @"UIDeviceOrientationPortraitUpsideDown");
+
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            NSLog(@"%@", @"UIDeviceOrientationLandscapeRight");
+
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            NSLog(@"%@", @"UIDeviceOrientationLandscapeLeft");
+
+            break;
+            
+        default: //UIDeviceOrientationUnknown
+            break;
+    }
+}
+
+
+// Note that UIInterfaceOrientationLandscapeLeft is equal to UIDeviceOrientationLandscapeRight (and vice versa).
+// This is because rotating the device to the left requires rotating the content to the right.
+//typedef NS_ENUM(NSInteger, UIInterfaceOrientation) {
+//    UIInterfaceOrientationUnknown            = UIDeviceOrientationUnknown,
+//    UIInterfaceOrientationPortrait           = UIDeviceOrientationPortrait,
+//    UIInterfaceOrientationPortraitUpsideDown = UIDeviceOrientationPortraitUpsideDown,
+//    UIInterfaceOrientationLandscapeLeft      = UIDeviceOrientationLandscapeRight,
+//    UIInterfaceOrientationLandscapeRight     = UIDeviceOrientationLandscapeLeft
+//};
 #pragma mark - VCSessionControllerDelegate
 - (void)sessionDidChangeState:(MCSessionState)newState peer:(MCPeerID*)peerID
 {

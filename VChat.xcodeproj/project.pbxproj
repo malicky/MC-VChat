@@ -438,6 +438,7 @@
 				13C0B92D19E3DCC000530A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13C0B92E19E3DCC000530A63 /* Build configuration list for PBXNativeTarget "VChatTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +447,7 @@
 				13C0B93019E3DCC000530A63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
